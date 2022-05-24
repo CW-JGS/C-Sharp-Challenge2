@@ -56,8 +56,10 @@ namespace Challenge2
 
 
         }
+        // rolls the dice 
         static void  rollDice()
         {
+            // rand is scoped to this function
             Random rand = new Random();
             Console.WriteLine(" enter number of dice you would like to roll");
             Console.Write(" > ");
