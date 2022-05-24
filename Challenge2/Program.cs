@@ -1,11 +1,11 @@
 ﻿using System;
 namespace Challenge2
 {
-    class Program
+    public class Program
     {
         public static List<int> dice = new List<int>();
         public static string path = $@"{Environment.CurrentDirectory}\diceRolls.csv";
-        static void Main(string[] args)
+        public static void Main()
         {
             if(File.Exists(path))
             {
@@ -146,7 +146,7 @@ namespace Challenge2
             writer.Close();
 
         }
-        static List<int> readDice() 
+        public static List<int> readDice() 
         {
             List<int> parts = new List<int>();
             StreamReader reader = new StreamReader(path);

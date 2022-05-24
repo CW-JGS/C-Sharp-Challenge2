@@ -1,13 +1,21 @@
 using Xunit;
-
-namespace challenge2Tests;
+using Challenge2;
+namespace Challenge2;
 
 public class UnitTest1
 {
     [Fact]
-    public void Test1()
+    public void MainUnitTest()
     {
-        Assert.True(true);
+        try
+        {
+            Program.Main();
+            Assert.False(false);
+        }
+        catch (System.Exception)
+        {
+            Assert.False(true);
+        }
 
     }
 }
