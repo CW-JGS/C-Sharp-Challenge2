@@ -1,2 +1,2 @@
-# C--Challenge2
+# C#-Challenge2
 Challenge two for C# 
